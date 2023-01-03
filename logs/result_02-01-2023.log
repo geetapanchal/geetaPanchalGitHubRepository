@@ -1,0 +1,23 @@
+[ 2023-01-02 17:08:03,195 ] - INFO : WDM :  ====== WebDriver manager ======
+[ 2023-01-02 17:08:07,072 ] - INFO : WDM :  Get LATEST geckodriver version for 107.0 firefox
+[ 2023-01-02 17:08:11,065 ] - INFO : WDM :  Driver [C:\Users\geeta_panchal\.wdm\drivers\geckodriver\win64\0.32\geckodriver.exe] found in cache
+[ 2023-01-02 17:08:20,805 ] - INFO : root :  Browser - ff
+[ 2023-01-02 17:08:20,805 ] - INFO : root :  URL - https://hj-ibmibm13182:31443/dashboards/
+[ 2023-01-02 17:08:20,805 ] - INFO : root :  Username - npiadmin
+[ 2023-01-02 17:08:24,255 ] - INFO : WDM :  ====== WebDriver manager ======
+[ 2023-01-02 17:08:28,679 ] - INFO : WDM :  Get LATEST geckodriver version for 107.0 firefox
+[ 2023-01-02 17:08:32,712 ] - INFO : WDM :  Driver [C:\Users\geeta_panchal\.wdm\drivers\geckodriver\win64\0.32\geckodriver.exe] found in cache
+[ 2023-01-02 17:08:40,929 ] - INFO : root :  Browser - ff
+[ 2023-01-02 17:08:40,930 ] - INFO : root :  URL - https://hj-ibmibm13182:31443/dashboards/
+[ 2023-01-02 17:08:40,931 ] - INFO : root :  Username - npiadmin
+[ 2023-01-02 17:08:40,996 ] - INFO : root :  User npiadmin entered
+[ 2023-01-02 17:08:41,015 ] - INFO : root :  Password entered
+[ 2023-01-02 17:08:52,140 ] - INFO : root :  submit button clicked successfully
+[ 2023-01-02 17:08:53,627 ] - INFO : root :  User - npiadmin  visible on welcome screen
+[ 2023-01-02 17:08:53,688 ] - INFO : root :  Menu.json read successfully
+[ 2023-01-02 17:08:53,700 ] - INFO : root :  Menu hierarchy for the dashboard : Administration:General:Sites:Sites
+[ 2023-01-02 17:08:53,989 ] - INFO : root :  Administration clicked successfully
+[ 2023-01-02 17:08:55,381 ] - INFO : root :  General clicked successfully
+[ 2023-01-02 17:09:00,848 ] - INFO : root :  Sites clicked successfully
+[ 2023-01-02 17:09:00,849 ] - INFO : root :  Open Dashboard pass
+[ 2023-01-02 17:09:02,050 ] - INFO : root :  Dashboard title : Sites

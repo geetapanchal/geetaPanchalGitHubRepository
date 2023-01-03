@@ -1,0 +1,70 @@
+{
+	"dashBoard": {
+		"dashboardTitle": "Sites",
+		"tabTitle": "Sites",
+		"dashBoardId": "dashboardTitle-",
+		"dashBoardWidgetId": "dashboardTitle-",
+		"dashboardButtons": {
+			"autoRefresh": {
+				"id": "Refresh",
+				"tabTitle": "Refresh",
+				"isdisplayed": true,
+				"isclickable": true,
+				"tooltip" : "Refresh"
+			},
+			"new1": {
+				"id": "",
+				"tabTitle": "Create new",
+				"isdisplayed": true,
+				"isclickable": true,
+				"tooltip" : "Create new",
+				"newButtonscreenTitle" : "Create new site",
+				"screenLabel" : "Site name,IP address range"
+},
+			"search": {
+				"id": "",
+				"tabTitle": "Search",
+				"isdisplayed": true,
+				"isclickable": true,
+				"tooltip" : "Search",
+				"searchKey" : ""
+			},
+			"import1": {
+				"id": "",
+				"tabTitle": "Import",
+				"isdisplayed": true,
+				"isclickable": true,
+				"tooltip" : "Import"
+			},
+			"close": {
+				"id": "",
+				"tabTitle": "Close",
+				"isdisplayed": true,
+				"isclickable": true,
+				"tooltip" : "Close"
+			},
+			"edit": {
+				"id": "",
+				"tabTitle": "Edit",
+				"isdisplayed": true,
+				"isclickable": true,
+				"tooltip" : "Edit",
+				"editButtonscreenTitle" : "Update site"
+			},
+			"delete": {
+				"id": "",
+				"tabTitle": "Delete",
+				"isdisplayed": true,
+				"isclickable": true,
+				"tooltip" : "Delete"
+			}
+			
+		}
+	},
+	"gridTitle": {
+		"displaynames": ["Site name:string","IP address range:string","Action:NA"]
+		},
+	"placeholders": {
+		"allplaceholders": ["Insert site name","Insert IP address","Insert IP address (optional)"]
+	}
+}

@@ -1,0 +1,17 @@
+[ 2023-01-03 14:42:13,883 ] - INFO : root :  Browser - chrome
+[ 2023-01-03 14:42:13,884 ] - INFO : root :  URL - https://hj-ibmibm13182:31443/dashboards/
+[ 2023-01-03 14:42:13,884 ] - INFO : root :  Username - npiadmin
+[ 2023-01-03 14:42:18,345 ] - INFO : root :  Browser - chrome
+[ 2023-01-03 14:42:18,345 ] - INFO : root :  URL - https://hj-ibmibm13182:31443/dashboards/
+[ 2023-01-03 14:42:18,346 ] - INFO : root :  Username - npiadmin
+[ 2023-01-03 14:42:19,569 ] - INFO : root :  User npiadmin entered
+[ 2023-01-03 14:42:19,659 ] - INFO : root :  Password entered
+[ 2023-01-03 14:42:31,552 ] - INFO : root :  submit button clicked successfully
+[ 2023-01-03 14:42:33,769 ] - INFO : root :  User - npiadmin  visible on welcome screen
+[ 2023-01-03 14:42:33,810 ] - INFO : root :  Menu.json read successfully
+[ 2023-01-03 14:42:33,811 ] - INFO : root :  Menu hierarchy for the dashboard : Administration:General:Sites:Sites
+[ 2023-01-03 14:42:34,043 ] - INFO : root :  Administration clicked successfully
+[ 2023-01-03 14:42:35,830 ] - INFO : root :  General clicked successfully
+[ 2023-01-03 14:42:41,058 ] - INFO : root :  Sites clicked successfully
+[ 2023-01-03 14:42:41,059 ] - INFO : root :  Open Dashboard pass
+[ 2023-01-03 14:42:42,427 ] - INFO : root :  Dashboard title : Sites

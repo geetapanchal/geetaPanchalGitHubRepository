@@ -1,0 +1,980 @@
+{
+	"menu": [
+	
+		{
+			"id": "M15",
+			"menuTitle": "Administration",
+			"type": "mainMenu",
+			"isdisplayed": true,
+			"isclickable": true,
+			"dashboardTitle": "",
+			"parentId": "",
+			"isenabled" : false
+		},
+		{
+			"id": "SM115",
+			"menuTitle": "Analytics",
+			"type": "subMenu",
+			"isdisplayed": true,
+			"isclickable": true,
+			"dashboardTitle": "",
+			"parentId": "M15",
+			"isenabled" : false
+		},
+		{
+			"id": "SM1151",
+			"menuTitle": "Batch analytics",
+			"type": "subMenu",
+			"isdisplayed": true,
+			"isclickable": true,
+			"dashboardTitle": "Batch analytics",
+			"parentId": "SM115",
+			"isenabled" : false
+		},
+		{
+			"id": "SM1152",
+			"menuTitle": "Threshold Definitions",
+			"type": "subMenu",
+			"isdisplayed": true,
+			"isclickable": true,
+			"dashboardTitle": "Threshold Definitions",
+			"parentId": "SM115",
+			"isenabled" : false
+		},
+		{
+			"id": "SM1153",
+			"menuTitle": "Streaming analytics",
+			"type": "subMenu",
+			"isdisplayed": true,
+			"isclickable": true,
+			"dashboardTitle": "Streaming analytics",
+			"parentId": "SM115",
+			"isenabled" : false
+		},
+		{
+			"id": "SM215",
+			"menuTitle": "Metric Management",
+			"type": "subMenu",
+			"isdisplayed": true,
+			"isclickable": true,
+			"dashboardTitle": "",
+			"parentId": "M15",
+			"isenabled" : false
+		},
+		{
+			"id": "SM2151",
+			"menuTitle": "User-defined calculations (UDC)",
+			"type": "subMenu",
+			"isdisplayed": true,
+			"isclickable": true,
+			"dashboardTitle": "User-defined calculations (UDC)",
+			"parentId": "SM215",
+			"isenabled" : false
+		},
+		{
+			"id": "SM2152",
+			"menuTitle": "Busy hour definition",
+			"type": "subMenu",
+			"isdisplayed": true,
+			"isclickable": true,
+			"dashboardTitle": "Busy hour definition",
+			"parentId": "SM215",
+			"isenabled" : false
+		},
+		{
+			"id": "SM315",
+			"menuTitle": "General",
+			"type": "subMenu",
+			"isdisplayed": true,
+			"isclickable": true,
+			"dashboardTitle": "",
+			"parentId": "M15",
+			"isenabled" : false
+		},
+		{
+			"id": "SM3151",
+			"menuTitle": "Sites",
+			"type": "subMenu",
+			"isdisplayed": true,
+			"isclickable": true,
+			"dashboardTitle": "Sites",
+			"parentId": "SM315",
+			"isenabled" : false
+		},
+		{
+			"id": "SM3152",
+			"menuTitle": "Resource Management",
+			"type": "subMenu",
+			"isdisplayed": true,
+			"isclickable": true,
+			"dashboardTitle": "Resource Management",
+			"parentId": "SM315",
+			"isenabled" : false
+		},
+		{
+			"id": "SM3153",
+			"menuTitle": "Time scheduling",
+			"type": "subMenu",
+			"isdisplayed": true,
+			"isclickable": true,
+			"dashboardTitle": "Time scheduling",
+			"parentId": "SM315",
+			"isenabled" : true
+		},
+		{
+			"id": "SM3154",
+			"menuTitle": "Alarm rules",
+			"type": "subMenu",
+			"isdisplayed": true,
+			"isclickable": true,
+			"dashboardTitle": "Alarm rules",
+			"parentId": "SM315",
+			"isenabled" : false
+		},
+		{
+			"id": "SM3155",
+			"menuTitle": "Domain Names",
+			"type": "subMenu",
+			"isdisplayed": true,
+			"isclickable": true,
+			"dashboardTitle": "Domain Names",
+			"parentId": "SM315",
+			"isenabled" : false
+		},
+		{
+			"id": "SM3156",
+			"menuTitle": "Type of service (ToS)",
+			"type": "subMenu",
+			"isdisplayed": true,
+			"isclickable": true,
+			"dashboardTitle": "Type of service (ToS)",
+			"parentId": "SM315",
+			"isenabled" : false
+		},
+		{
+			"id": "SM3157",
+			"menuTitle": "Autonomous systems",
+			"type": "subMenu",
+			"isdisplayed": true,
+			"isclickable": true,
+			"dashboardTitle": "Autonomous systems",
+			"parentId": "SM315",
+			"isenabled" : false
+		},
+		{
+			"id": "SM3158",
+			"menuTitle": "Retention Profiles",
+			"type": "subMenu",
+			"isdisplayed": true,
+			"isclickable": true,
+			"dashboardTitle": "Retention Profiles",
+			"parentId": "SM315",
+			"isenabled" : false
+		},
+		{
+			"id": "SM415",
+			"menuTitle": "SNMP Discovery",
+			"type": "subMenu",
+			"isdisplayed": true,
+			"isclickable": true,
+			"dashboardTitle": "",
+			"parentId": "M15",
+			"isenabled" : false
+		},
+		{
+			"id": "SM4151",
+			"menuTitle": "Discovery Profiles",
+			"type": "subMenu",
+			"isdisplayed": true,
+			"isclickable": true,
+			"dashboardTitle": "Discovery Profiles",
+			"parentId": "SM415",
+			"isenabled" : false
+		},
+		{
+			"id": "SM4152",
+			"menuTitle": "SNMP Credentials",
+			"type": "subMenu",
+			"isdisplayed": true,
+			"isclickable": true,
+			"dashboardTitle": "SNMP Credentials",
+			"parentId": "SM415",
+			"isenabled" : false
+		},
+		{
+			"id": "SM515",
+			"menuTitle": "Flow",
+			"type": "subMenu",
+			"isdisplayed": true,
+			"isclickable": true,
+			"dashboardTitle": "",
+			"parentId": "M15",
+			"isenabled" : false
+		},
+		{
+			"id": "SM5151",
+			"menuTitle": "Flow Aggregations",
+			"type": "subMenu",
+			"isdisplayed": true,
+			"isclickable": true,
+			"dashboardTitle": "Flow Aggregations",
+			"parentId": "SM515",
+			"isenabled" : false
+		},
+		{
+			"id": "SM5152",
+			"menuTitle": "Flow Interfaces",
+			"type": "subMenu",
+			"isdisplayed": true,
+			"isclickable": true,
+			"dashboardTitle": "Flow Interfaces",
+			"parentId": "SM515",
+			"isenabled" : false
+		},
+		{
+			"id": "SM5153",
+			"menuTitle": "NBAR",
+			"type": "subMenu",
+			"isdisplayed": true,
+			"isclickable": true,
+			"dashboardTitle": "NBAR",
+			"parentId": "SM515",
+			"isenabled" : false
+		},
+		{
+			"id": "SM5154",
+			"menuTitle": "Flow IP grouping",
+			"type": "subMenu",
+			"isdisplayed": true,
+			"isclickable": true,
+			"dashboardTitle": "Flow IP grouping",
+			"parentId": "SM515",
+			"isenabled" : false
+		},
+		{
+			"id": "M13",
+			"menuTitle": "Network",
+			"type": "mainMenu",
+			"isdisplayed": true,
+			"isclickable": true,
+			"dashboardTitle": "",
+			"parentId": "",
+			"isenabled" : false
+		},
+		{
+			"id": "SM313",
+			"menuTitle": "NewMetricViewer",
+			"type": "subMenu",
+			"isdisplayed": true,
+			"isclickable": true,
+			"dashboardTitle": "NewMetricViewer",
+			"parentId": "M13",
+			"isenabled" : false
+		},
+		{
+			"id": "SM113",
+			"menuTitle": "Performance Alarm Overview",
+			"type": "subMenu",
+			"isdisplayed": true,
+			"isclickable": true,
+			"dashboardTitle": "Performance Alarm Overview",
+			"parentId": "M13",
+			"isenabled" : false
+		},
+		{
+			"id": "SM213",
+			"menuTitle": "Metric Viewer",
+			"type": "subMenu",
+			"isdisplayed": true,
+			"isclickable": true,
+			"dashboardTitle": "Metric Viewer",
+			"parentId": "M13",
+			"isenabled" : false
+		},
+		{
+			"id": "M16",
+			"menuTitle": "Infra",
+			"type": "mainMenu",
+			"isdisplayed": true,
+			"isclickable": true,
+			"dashboardTitle": "",
+			"parentId": "",
+			"isenabled" : false
+		},
+		{
+			"id": "M161",
+			"menuTitle": "Device",
+			"type": "subMenu",
+			"isdisplayed": true,
+			"isclickable": true,
+			"dashboardTitle": "",
+			"parentId": "M16",
+			"isenabled" : false
+		},
+		{
+			"id": "M1611",
+			"menuTitle": "Interface Traffic Monitoring",
+			"type": "subMenu",
+			"isdisplayed": true,
+			"isclickable": true,
+			"dashboardTitle": "Interface Traffic Monitoring",
+			"parentId": "M161",
+			"isenabled" : false
+		},
+		{
+			"id": "M162",
+			"menuTitle": "Load balancer",
+			"type": "subMenu",
+			"isdisplayed": true,
+			"isclickable": true,
+			"dashboardTitle": "",
+			"parentId": "M16",
+			"isenabled" : false
+		},
+		{
+			"id": "M1621",
+			"menuTitle": "GTM Details",
+			"type": "subMenu",
+			"isdisplayed": false,
+			"isclickable": true,
+			"dashboardTitle": "GTM Details",
+			"parentId": "M162",
+			"isenabled" : false
+		},
+		{
+			"id": "M1622",
+			"menuTitle": "LTM Details",
+			"type": "subMenu",
+			"isdisplayed": false,
+			"isclickable": true,
+			"dashboardTitle": "LTM Details",
+			"parentId": "M162",
+			"isenabled" : false
+		},
+		{
+			"id": "M1623",
+			"menuTitle": "Load balancer overview",
+			"type": "subMenu",
+			"isdisplayed": false,
+			"isclickable": true,
+			"dashboardTitle": "Load balancer overview",
+			"parentId": "M162",
+			"isenabled" : false
+		},
+		{
+			"id": "M1624",
+			"menuTitle": "Pool Details",
+			"type": "mainMenu",
+			"isdisplayed": false,
+			"isclickable": true,
+			"dashboardTitle": "Pool Details",
+			"parentId": "M162",
+			"isenabled" : false
+		},
+		{
+			"id": "M1625",
+			"menuTitle": "Pool Member Details",
+			"type": "mainMenu",
+			"isdisplayed": false,
+			"isclickable": true,
+			"dashboardTitle": "Pool Member Details",
+			"parentId": "M162",
+			"isenabled" : false
+		},
+		{
+			"id": "M1626",
+			"menuTitle": "Virtual Server Details",
+			"type": "mainMenu",
+			"isdisplayed": false,
+			"isclickable": true,
+			"dashboardTitle": "Virtual Server Details",
+			"parentId": "M162",
+			"isenabled" : false
+		},
+		{
+			"id": "M2",
+			"menuTitle": "NetFlow",
+			"type": "mainMenu",
+			"isdisplayed": false,
+			"isclickable": true,
+			"dashboardTitle": "",
+			"parentId": "",
+			"isenabled" : false	
+		},
+		{
+			"id": "SM3",
+			"menuTitle": "Network Traffic Overview",
+			"type": "subMenu",
+			"isdisplayed": false,
+			"isclickable": true,
+			"dashboardTitle": "Network Traffic Overview",
+			"parentId": "M2",
+			"isenabled" : false
+		},
+		{
+			"id": "SM4",
+			"menuTitle": "Applications Response Overview",
+			"type": "subMenu",
+			"isdisplayed": false,
+			"isclickable": true,
+			"dashboardTitle": "Applications Response Overview",
+			"parentId": "M2",
+			"isenabled" : false
+		},	
+		{
+			"id": "M4",
+			"menuTitle": "Applications",
+			"type": "MainMenu",
+			"isdisplayed": false,
+			"isclickable": true,
+			"dashboardTitle": "",
+			"parentId": "M2",
+			"isenabled" : false
+		},
+		{
+			"id": "SM5",
+			"menuTitle": "Top Applications",
+			"type": "subMenu",
+			"isdisplayed": false,
+			"isclickable": true,
+			"dashboardTitle": "Top Applications",
+			"parentId": "M4",
+			"isenabled" : false
+		},
+		{
+			"id": "SM6",
+			"menuTitle": "Top Applications with ToS",
+			"type": "subMenu",
+			"isdisplayed": false,
+			"isclickable": true,
+			"dashboardTitle": "Top Applications with ToS",
+			"parentId": "M4",
+			"isenabled" : false
+		},
+		{
+			"id": "M5",
+			"menuTitle": "Autonomous Systems",
+			"type": "MainMenu",
+			"isdisplayed": false,
+			"isclickable": true,
+			"dashboardTitle": "",
+			"parentId": "M2",
+			"isenabled" : false
+		},
+			{
+			"id": "SM20",
+			"menuTitle": "Top Autonomous System Conversations",
+			"type": "subMenu",
+			"isdisplayed": false,
+			"isclickable": true,
+			"dashboardTitle": "Top Autonomous System Conversations",
+			"parentId": "M5",
+			"isenabled" : false
+		},
+		{
+			"id": "SM20",
+			"menuTitle": "Top Source Autonomous Systems",
+			"type": "subMenu",
+			"isdisplayed": false,
+			"isclickable": true,
+			"dashboardTitle": "Top Source Autonomous Systems",
+			"parentId": "M5",
+			"isenabled" : false
+		},
+		{
+			"id": "SM20",
+			"menuTitle": "Top Destination Autonomous Systems",
+			"type": "subMenu",
+			"isdisplayed": false,
+			"isclickable": true,
+			"dashboardTitle": "Top Destination Autonomous Systems",
+			"parentId": "M5",
+			"isenabled" : false
+		},
+		
+		
+		{
+			"id": "M6",
+			"menuTitle": "Conversations",
+			"type": "MainMenu",
+			"isdisplayed": false,
+			"isclickable": true,
+			"dashboardTitle": "",
+			"parentId": "M2",
+			"isenabled" : false
+		},
+		{
+			"id": "SM7",
+			"menuTitle": "Top Conversations",
+			"type": "subMenu",
+			"isdisplayed": false,
+			"isclickable": true,
+			"dashboardTitle": "Top Conversations",
+			"parentId": "M6",
+			"isenabled" : false
+		},
+		{
+			"id": "SM8",
+			"menuTitle": "Top Conversations with ToS",
+			"type": "subMenu",
+			"isdisplayed": false,
+			"isclickable": true,
+			"dashboardTitle": "Top Conversations with ToS",
+			"parentId": "M6",
+			"isenabled" : false
+		},
+		{
+			"id": "SM9",
+			"menuTitle": "Top Conversations with Application",
+			"type": "subMenu",
+			"isdisplayed": false,
+			"isclickable": true,
+			"dashboardTitle": "Top Conversations with Application",
+			"parentId": "M6",
+			"isenabled" : false
+		},
+		{
+			"id": "M8",
+			"menuTitle": "IP Address Grouping",
+			"type": "MainMenu",
+			"isdisplayed": false,
+			"isclickable": true,
+			"dashboardTitle": "",
+			"parentId": "M2",
+			"isenabled" : false
+		},
+		{
+			"id": "SM22",
+			"menuTitle": "Top Source IP Groups with Application",
+			"type": "subMenu",
+			"isdisplayed": false,
+			"isclickable": true,
+			"dashboardTitle": "Top Source IP Groups with Application",
+			"parentId": "M8",
+			"isenabled" : false
+		},
+		{
+			"id": "SM23",
+			"menuTitle": "Top Source IP Groups with ToS",
+			"type": "subMenu",
+			"isdisplayed": false,
+			"isclickable": true,
+			"dashboardTitle": "Top Source IP Groups with ToS",
+			"parentId": "M8",
+			"isenabled" : false
+		},
+		{
+			"id": "SM24",
+			"menuTitle": "Top Source IP Groups with Protocol",
+			"type": "subMenu",
+			"isdisplayed": false,
+			"isclickable": true,
+			"dashboardTitle": "Top Source IP Groups with Protocol",
+			"parentId": "M8",
+			"isenabled" : false
+		},
+		{
+			"id": "SM25",
+			"menuTitle": "Top Destination IP Groups with Application",
+			"type": "subMenu",
+			"isdisplayed": false,
+			"isclickable": true,
+			"dashboardTitle": "Top Destination IP Groups with Application",
+			"parentId": "M8",
+			"isenabled" : false
+		},
+		{
+			"id": "SM26",
+			"menuTitle": "Top Destination IP Groups with ToS",
+			"type": "subMenu",
+			"isdisplayed": false,
+			"isclickable": true,
+			"dashboardTitle": "Top Destination IP Groups with ToS",
+			"parentId": "M8",
+			"isenabled" : false
+		},
+		{
+			"id": "SM27",
+			"menuTitle": "Top Destination IP Groups with Protocol",
+			"type": "subMenu",
+			"isdisplayed": false,
+			"isclickable": true,
+			"dashboardTitle": "Top Destination IP Groups with Protocol",
+			"parentId": "M8",
+			"isenabled" : false
+		},
+		
+		{
+			"id": "SM28",
+			"menuTitle": "Top IP Group Conversations with Application",
+			"type": "subMenu",
+			"isdisplayed": false,
+			"isclickable": true,
+			"dashboardTitle": "Top IP Group Conversations with Application",
+			"parentId": "M8",
+			"isenabled" : false
+		},
+		{
+			"id": "SM29",
+			"menuTitle": "Top IP Group Conversations with ToS",
+			"type": "subMenu",
+			"isdisplayed": false,
+			"isclickable": true,
+			"dashboardTitle": "Top IP Group Conversations with ToS",
+			"parentId": "M8",
+			"isenabled" : false
+		},
+		{
+			"id": "SM30",
+			"menuTitle": "Top IP Group Conversations with Protocol",
+			"type": "subMenu",
+			"isdisplayed": false,
+			"isclickable": true,
+			"dashboardTitle": "Top IP Group Conversations with Protocol",
+			"parentId": "M8",
+			"isenabled" : false
+		},
+		{
+			"id": "SM31",
+			"menuTitle": "Top Source IP Groups",
+			"type": "subMenu",
+			"isdisplayed": false,
+			"isclickable": true,
+			"dashboardTitle": "Top Source IP Groups",
+			"parentId": "M8",
+			"isenabled" : false
+		},
+		{
+			"id": "SM32",
+			"menuTitle": "Top Destination IP Groups",
+			"type": "subMenu",
+			"isdisplayed": false,
+			"isclickable": true,
+			"dashboardTitle": "Top Destination IP Groups",
+			"parentId": "M8",
+			"isenabled" : false
+		},
+		{
+			"id": "SM33",
+			"menuTitle": "Top IP Group Conversations",
+			"type": "subMenu",
+			"isdisplayed": false,
+			"isclickable": true,
+			"dashboardTitle": "Top IP Group Conversations",
+			"parentId": "M8",
+			"isenabled" : false
+		},
+		{
+			"id": "M7",
+			"menuTitle": "Destinations",
+			"type": "MainMenu",
+			"isdisplayed": false,
+			"isclickable": true,
+			"dashboardTitle": "",
+			"parentId": "M2",
+			"isenabled" : false
+		},
+			{
+			"id": "SM17",
+			"menuTitle": "Top Destinations",
+			"type": "subMenu",
+			"isdisplayed": false,
+			"isclickable": true,
+			"dashboardTitle": "Top Destinations",
+			"parentId": "M7",
+			"isenabled" : false
+		},
+		{
+			"id": "SM18",
+			"menuTitle": "Top Destinations with Application",
+			"type": "subMenu",
+			"isdisplayed": false,
+			"isclickable": true,
+			"dashboardTitle": "Top Destinations with Application",
+			"parentId": "M7",
+			"isenabled" : false
+		},
+		{
+			"id": "M9",
+			"menuTitle": "Protocols",
+			"type": "MainMenu",
+			"isdisplayed": false,
+			"isclickable": true,
+			"dashboardTitle": "",
+			"parentId": "M2",
+			"isenabled" : false
+		},
+		{
+			"id": "SM12",
+			"menuTitle": "Top Protocols",
+			"type": "subMenu",
+			"isdisplayed": false,
+			"isclickable": true,
+			"dashboardTitle": "Top Protocols",
+			"parentId": "M9",
+			"isenabled" : false
+		},
+		{
+			"id": "SM13",
+			"menuTitle": "Top Protocols with Application",
+			"type": "subMenu",
+			"isdisplayed": false,
+			"isclickable": true,
+			"dashboardTitle": "Top Protocols with Application",
+			"parentId": "M9",
+			"isenabled" : false
+		},
+		{
+			"id": "SM14",
+			"menuTitle": "Top Protocols with Source",
+			"type": "subMenu",
+			"isdisplayed": false,
+			"isclickable": true,
+			"dashboardTitle": "Top Protocols with Source",
+			"parentId": "M9",
+			"isenabled" : false
+		},
+		{
+			"id": "SM15",
+			"menuTitle": "Top Protocols with Destination",
+			"type": "subMenu",
+			"isdisplayed": false,
+			"isclickable": true,
+			"dashboardTitle": "Top Protocols with Destination",
+			"parentId": "M9",
+			"isenabled" : false
+		},
+		{
+			"id": "SM16",
+			"menuTitle": "Top Protocols with Conversation",
+			"type": "subMenu",
+			"isdisplayed": false,
+			"isclickable": true,
+			"dashboardTitle": "Top Protocols with Conversation",
+			"parentId": "M9",
+			"isenabled" : false
+		},
+		{
+			"id": "M10",
+			"menuTitle": "QoS Queue",
+			"type": "MainMenu",
+			"isdisplayed": false,
+			"isclickable": true,
+			"dashboardTitle": "",
+			"parentId": "M2",
+			"isenabled" : false
+		},	
+		{
+			"id": "SM21",
+			"menuTitle": "QoS Queue Drops",
+			"type": "subMenu",
+			"isdisplayed": false,
+			"isclickable": true,
+			"dashboardTitle": "QoS Queue Drops",
+			"parentId": "M10",
+			"isenabled" : false
+		},
+				{
+			"id": "M11",
+			"menuTitle": "Source",
+			"type": "MainMenu",
+			"isdisplayed": false,
+			"isclickable": true,
+			"dashboardTitle": "",
+			"parentId": "M2",
+			"isenabled" : false 
+		},
+		{
+			"id": "SM10",
+			"menuTitle": "Top Sources",
+			"type": "subMenu",
+			"isdisplayed": false,
+			"isclickable": true,
+			"dashboardTitle": "Top Sources",
+			"parentId": "M11",
+			"isenabled" : false
+		},
+		{
+			"id": "SM11",
+			"menuTitle": "Top Sources with Application",
+			"type": "subMenu",
+			"isdisplayed": false,
+			"isclickable": true,
+			"dashboardTitle": "Top Sources with Application",
+			"parentId": "M11",
+			"isenabled" : false
+		},
+		
+		{
+			"id": "M12",
+			"menuTitle": "ToS",
+			"type": "MainMenu",
+			"isdisplayed": false,
+			"isclickable": true,
+			"dashboardTitle": "",
+			"parentId": "M2",
+			"isenabled" : false 
+		},
+		{
+			"id": "SM19",
+			"menuTitle": "Top ToS",
+			"type": "subMenu",
+			"isdisplayed": false,
+			"isclickable": true,
+			"dashboardTitle": "Top ToS",
+			"parentId": "M12",
+			"isenabled" : false
+		},	
+		{
+			"id": "M17",
+			"menuTitle": "Transport",
+			"type": "mainMenu",
+			"isdisplayed": true,
+			"isclickable": true,
+			"dashboardTitle": "",
+			"parentId": "",
+			"isenabled" : false
+		},
+		{
+			"id": "M1711",
+			"menuTitle": "IP",
+			"type": "subMenu",
+			"isdisplayed": false,
+			"isclickable": true,
+			"dashboardTitle": "",
+			"parentId": "M17",
+			"isenabled" : false
+		},
+		{
+			"id": "M1712",
+			"menuTitle": "IP Links Performance Overview",
+			"type": "subMenu",
+			"isdisplayed": false,
+			"isclickable": true,
+			"dashboardTitle": "IP Links Performance Overview",
+			"parentId": "M1711",
+			"isenabled" : false
+		},
+		{
+			"id": "M1715",
+			"menuTitle": "IP Links Performance Overview",
+			"type": "subMenu",
+			"isdisplayed": true,
+			"isclickable": true,
+			"dashboardTitle": "Source and Destination Details",
+			"parentId": "M1711",
+			"isenabled" : false
+		},
+		{
+			"id": "M1713",
+			"menuTitle": "Optical",
+			"type": "subMenu",
+			"isdisplayed": false,
+			"isclickable": true,
+			"dashboardTitle": "",
+			"parentId": "M17",
+			"isenabled" : false
+		},
+		{
+			"id": "M1714",
+			"menuTitle": "GPON OLT Overview",
+			"type": "subMenu",
+			"isdisplayed": false,
+			"isclickable": true,
+			"dashboardTitle": "GPON OLT Overview",
+			"parentId": "M1713",
+			"isenabled" : false
+		},		
+		{
+			"id": "M14",
+			"menuTitle": "Mobile",
+			"type": "mainMenu",
+			"isdisplayed": true,
+			"isclickable": true,
+			"dashboardTitle": "",
+			"parentId": "",
+			"isenabled" : false
+		},
+		{
+			"id": "SM114",
+			"menuTitle": "Access",
+			"type": "subMenu",
+			"isdisplayed": true,
+			"isclickable": true,
+			"dashboardTitle": "",
+			"parentId": "M14",
+			"isenabled" : false
+		},
+		{
+			"id": "SM214",
+			"menuTitle": "Core",
+			"type": "subMenu",
+			"isdisplayed": true,
+			"isclickable": true,
+			"dashboardTitle": "",
+			"parentId": "M14",
+			"isenabled" : false
+		},
+		{
+			"id": "SM1141",
+			"menuTitle": "CS Access",
+			"type": "subMenu",
+			"isdisplayed": true,
+			"isclickable": true,
+			"dashboardTitle": "CS Access",
+			"parentId": "SM114",
+			"isenabled" : false
+		},
+		{
+			"id": "SM1142",
+			"menuTitle": "PS Access",
+			"type": "subMenu",
+			"isdisplayed": true,
+			"isclickable": true,
+			"dashboardTitle": "PS Access",
+			"parentId": "SM114",
+			"isenabled" : false
+		},
+		{
+			"id": "SM2141",
+			"menuTitle": "CS Core",
+			"type": "subMenu",
+			"isdisplayed": true,
+			"isclickable": true,
+			"dashboardTitle": "CS Core",
+			"parentId": "SM214",
+			"isenabled" : false
+		},
+		{
+			"id": "M18",
+			"menuTitle": "Reporting",
+			"type": "mainMenu",
+			"isdisplayed": true,
+			"isclickable": true,
+			"dashboardTitle": "",
+			"parentId": "",
+			"isenabled" : false
+		},
+		{
+			"id": "M1811",
+			"menuTitle": "Schedule Tasks",
+			"type": "subMenu",
+			"isdisplayed": true,
+			"isclickable": true,
+			"dashboardTitle": "Schedule Tasks",
+			"parentId": "M18",
+			"isenabled" : false
+		},
+		{
+			"id": "M1812",
+			"menuTitle": "Designer Tool",
+			"type": "subMenu",
+			"isdisplayed": true,
+			"isclickable": true,
+			"dashboardTitle": "Designer Tool",
+			"parentId": "M18",
+			"isenabled" : false
+		}
+
+	]
+}
