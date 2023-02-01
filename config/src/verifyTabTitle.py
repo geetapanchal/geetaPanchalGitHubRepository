@@ -44,9 +44,11 @@ class DashTabTitle(BaseClass):
             self.parent.log(self.LogStatus.PASS, "Dash Tab title matched expected")
             self.allureLogs("Dash Tab title matched expected")
 
+        self.allureLogs("")
         self.parent.log(self.LogStatus.INFO,"")
         self.parent.log(self.LogStatus.INFO, "Expected dash tab tooltip : " + ExpectedTooltip)
         self.parent.log(self.LogStatus.INFO, "Actual dash tab tooltip : " + sActualTooltip)
+
         self.allureLogs("Expected dash tab tooltip : " + ExpectedTooltip)
         self.allureLogs("Actual dash tab tooltip : " + sActualTooltip)
 
