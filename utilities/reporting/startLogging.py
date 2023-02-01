@@ -18,7 +18,7 @@ class Logging:
     reportpath = sys.path[0] + os.sep + "logs" + os.sep + logfile_Name + '_' + datenow + '.log'
 
     # set logging format
-    FORMAT = '[ %(asctime)s ] - %(levelname)s : %(name)s :  %(message)s'
+    FORMAT = '[ %(asctime)s ] - %(levelname)s : %(message)s'
     logging.basicConfig(level=logging.INFO, filename=reportpath, filemode='w', format=FORMAT)
 
     def logError(self, message):

@@ -13,4 +13,7 @@ TopApplications = "Top Applications"
 JSONFILETOPAPPLICATIONS= os.sep+"json"+os.sep+"TopApplications.json"
 
 ConfigSites = "Sites";
-JSONFILESITES = os.sep+"json"+os.sep+"SiteManagegment.json"
+JSONSITES = os.sep+"json"+os.sep+"SiteManagegment.json"
+
+ConfigStreamingAnalytics = "Streaming analytics";
+JSONSTREAMINGANALYTICS = os.sep+"json"+os.sep+"StreamingAnalytics.json"

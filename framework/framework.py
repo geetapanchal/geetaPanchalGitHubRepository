@@ -43,10 +43,53 @@ class Framework(BaseClass):
             self.parent.log(self.LogStatus.INFO, "Dashboard title : " + DashTitle.text)
             self.allureLogs("Dashboard title : " + DashTitle.text)
 
-
     def clickAndWait(self, webElement, txt):
         webElement.click()
         msg = txt + " clicked successfully"
         print(txt + " clicked successfully")
         Logging.logInfo("%s", msg)
         self.parent.log(self.LogStatus.INFO, msg)
+
+    def comparingArrays(self, jsonvalues, UIValues):
+        self.parent.log(self.LogStatus.INFO, "Expected values from json : " + str(jsonvalues))
+        self.parent.log(self.LogStatus.INFO, "Actual values from UI : " + str(jsonvalues))
+        self.parent.log(self.LogStatus.INFO, "")
+
+        self.parent.log(self.LogStatus.INFO, "Started comapring Json and UI values")
+        self.allureLogs("Started comapring Json and UI values")
+
+        comparingList = []
+        for i in range(len(jsonvalues)):
+            comparingList.append(0)
+
+        for i in range(len(jsonvalues)):
+            try:
+                if UIValues[i].__contains__(jsonvalues[i]):
+                    comparingList[i] = 1
+                    self.parent.log(self.LogStatus.INFO, "UI value - " + UIValues[i])
+                    self.parent.log(self.LogStatus.INFO, "Verified with json value '" + jsonvalues[
+                        i] + "' !! Matched counter value 	 '" + str(comparingList))
+                else:
+                    Logging.logInfo("%s", "Values are not as per expectation.")
+
+                try:
+                    assert jsonvalues[i] == UIValues[i]
+                except AssertionError:
+                    Logging.logInfo("%s", "values from both array " + jsonvalues[i] + " , " + UIValues[i])
+                    self.parent.log(self.LogStatus.FAIL, "Testcase FAIL - Json & UI values not matched")
+                    self.parent.log(self.LogStatus.INFO, "Expected - " + jsonvalues[i])
+                    self.parent.log(self.LogStatus.INFO, "Actual - " + UIValues[i])
+                    self.allureLogs("Testcase FAIL - Json & UI values not matched")
+                    self.allureLogs("Expected - " + jsonvalues[i])
+                    self.allureLogs("Actual - " + UIValues[i])
+                else:
+                    Logging.logInfo("%s", "values from both array " + jsonvalues[i] + " , " + UIValues[i])
+                    self.parent.log(self.LogStatus.PASS, "Testcase PASS - Json & UI values matched")
+                    self.allureLogs("Expected - " + jsonvalues[i] + " , Actual - " + UIValues[i]+ " !!! \n Testcase PASS - values matched ")
+
+                self.parent.log(self.LogStatus.INFO, "")
+            except Exception as e:
+                print(e)
+                self.parent.log(self.LogStatus.FAIL, e)
+                self.allureLogs(e)
+                Logging.logInfo("%s", e)

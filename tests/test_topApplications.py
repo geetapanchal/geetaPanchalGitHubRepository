@@ -1,5 +1,4 @@
 import pytest
-
 from framework.BaseClass import BaseClass
 from framework.openDashboard import OpenDashboard
 
@@ -12,3 +11,5 @@ class TestTopApplications(BaseClass):
         t = OpenDashboard("")
         t.dashboardName = 'Top Applications'
         t.openDashboard()
+
+

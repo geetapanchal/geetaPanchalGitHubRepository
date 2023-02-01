@@ -1,6 +1,5 @@
 import os
 import sys
-
 import jpype as jp
 import datetime
 from config import configuration
@@ -28,8 +27,6 @@ class StartReporting:
         ExtentReports = jp.JClass('com.relevantcodes.extentreports.ExtentReports')
         ExtentTest = jp.JClass('com.relevantcodes.extentreports.ExtentTest')
         LogStatus = jp.JClass('com.relevantcodes.extentreports.LogStatus')
-        print("REport name ="+ReportName)
-
 
     except Exception as e:
         print(e)

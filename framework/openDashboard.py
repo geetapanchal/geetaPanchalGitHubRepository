@@ -1,4 +1,5 @@
 from utilities.reporting.startExtentReporting import StartReporting
+from selenium.webdriver.common.action_chains import ActionChains
 from utilities.fileUtilities.ReadJson import ReadJson
 from utilities.reporting.startLogging import Logging
 from selenium.webdriver.common.by import By
@@ -12,18 +13,21 @@ import os
 
 class OpenDashboard(BaseClass):
 
-    def __init__(self, driver, dashboardName,parent):
+    def __init__(self, driver, dashboardName, parent):
         self.dashboardName = dashboardName
         self.driver = driver
         self.parent = parent
         self.LogStatus = StartReporting.LogStatus
 
     sMainMenu = (By.XPATH, "//*[contains(@class,'parentMenus')]")
-    sSubMenu0 = (By.XPATH, "//div[@id='cdk-overlay-0']//button")
-    sSubMenu1 = (By.XPATH, "//div[@id='cdk-overlay-1']//button")
+    # sSubMenu0 = (By.XPATH, "//div[@id='cdk-overlay-0']//button")
+    # sSubMenu1 = (By.XPATH, "//div[@id='cdk-overlay-1']//button")
+    sSubMenu0 = (By.XPATH, "//h5")
+    sSubMenu1 = (By.XPATH, "// h5 /../ div")
 
     def openDashboard(self):
         f = Framework(self.driver, self.parent)
+        action = ActionChains(self.driver)
 
         # Read menu json
         obj = json.loads(ReadJson.readJson(sys.path[0] + os.sep + "json" + os.sep + "Menu.json"))
@@ -68,21 +72,23 @@ class OpenDashboard(BaseClass):
                     if i == 0:
                         wEachMenu = self.driver.find_elements(*OpenDashboard.sMainMenu)
                         for wMainMenu in wEachMenu:
+                            action.move_to_element(wMainMenu).perform()
                             if wMainMenu.text == HierachyArray[0]:
                                 f.clickAndWait(wMainMenu, wMainMenu.text)
                     elif i == 1:
-                        self.wait_visibility_of_element_located(By.XPATH, "//div[@id='cdk-overlay-0']//button")
-                        wSubMenu = self.driver.find_elements(*OpenDashboard.sSubMenu0)
-                        for lSubMenu in wSubMenu:
-                            time.sleep(1)
-                            if lSubMenu.text == HierachyArray[i]:
-                                f.clickAndWait(lSubMenu, lSubMenu.text)
+                        print("PH")
+                        # self.wait_visibility_of_element_located(By.XPATH, "//h5")
+                        # wSubMenu = self.driver.find_elements(*OpenDashboard.sSubMenu0)
+                        # for lSubMenu in wSubMenu:
+                        #     #time.sleep(1)
+                        #     if lSubMenu.text == HierachyArray[i]:
+                        #         f.clickAndWait(lSubMenu, lSubMenu.text)
 
                     elif i == 2:
-                        self.wait_visibility_of_element_located(By.XPATH, "//div[@id='cdk-overlay-1']//button")
+                        # self.wait_visibility_of_element_located(By.XPATH, "//div[@id='cdk-overlay-1']//button")
                         wSubMenu = self.driver.find_elements(*OpenDashboard.sSubMenu1)
                         for lSubMenu in wSubMenu:
-                            time.sleep(1)
+                            # time.sleep(1)
                             if lSubMenu.text == HierachyArray[i]:
                                 f.clickAndWait(lSubMenu, lSubMenu.text)
                                 break

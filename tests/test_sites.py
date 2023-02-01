@@ -9,7 +9,7 @@ from framework.framework import Framework
 from config.src.verifyTabTitle import DashTabTitle
 from framework.openDashboard import OpenDashboard
 from config.src.verifyDashboardTitle import DashboardTitle
-from config.src import Refresh
+from config.src.verifyRefresh import Refresh
 from utilities.reporting.startExtentReporting import StartReporting
 
 

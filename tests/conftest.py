@@ -2,6 +2,8 @@ import os
 import sys
 import pytest
 from selenium import webdriver
+from selenium.webdriver.chrome.options import Options
+
 from config import configuration
 from utilities.reporting.startLogging import Logging
 from selenium.webdriver.chrome.service import Service
@@ -10,7 +12,6 @@ from webdriver_manager.microsoft import EdgeChromiumDriverManager
 from selenium.webdriver.edge.service import Service as EdgeService
 from selenium.webdriver.firefox.service import Service as FirefoxService
 from utilities.fileUtilities.TxtFile_Utilities import TxtFileUtils
-
 
 # Command line arguments
 def pytest_addoption(parser):
@@ -40,7 +41,6 @@ def pytest_collection_modifyitems(session, config, items):
 
     items.clear()
     for i in toRunCopy:
-        print(i)
         items.append(i)
 
 
@@ -50,6 +50,9 @@ def setup(request):
     # Browser setup
     browser_name = request.config.getoption("--browser")
     if browser_name == "chrome":
+        opt=Options()
+        opt.add_argument("--headless")
+
         s = Service(sys.path[0] + os.sep + "lib" + os.sep + "chromedriver.exe")
         driver = webdriver.Chrome(service=s)
     elif browser_name == "ff":
@@ -58,7 +61,6 @@ def setup(request):
         driver = webdriver.Edge(service=EdgeService(EdgeChromiumDriverManager().install()))
     else:
         print("Invalid browser type")
-
 
     # Maximize window and open URL
     driver.maximize_window()
@@ -76,4 +78,3 @@ def setup(request):
 
     yield
     driver.close()
-    # jp.shutdownJVM()

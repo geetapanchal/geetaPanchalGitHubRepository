@@ -68,7 +68,7 @@
 		}
 	},
 	"gridTitle": {
-		"displaynames": ["Stream name:string","Focal Resource type:string","Metrics:string","Create time:string","Update time:string","Status:string","Action:NA"]
+		"displaynames": ["Stream name:string","Focal Resource type and group:string","Resource filter:string","Metrics:string","Create time:string","Update time:string","Status:string","Action:NA"]
 		},
 	"placeholders": {
 		"allplaceholders": ["Insert a stream name","Select a Resource type","Select a group","Select a Focal Resource type","Search a metric","No metric selected"]

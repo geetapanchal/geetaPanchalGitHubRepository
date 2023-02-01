@@ -3,6 +3,7 @@ Created on Jun 22, 2022
 @author: Geeta
 '''
 import allure
+import allure_commons.logger
 import pytest
 from allure_commons.types import AttachmentType
 from selenium.webdriver.support import expected_conditions as EC
@@ -22,6 +23,9 @@ class BaseClass:
 
     def allureattach(self,text):
         allure.attach(self.driver.get_screenshot_as_png(), name=text, attachment_type=AttachmentType.PNG)
+
+    def allureattachtext(self,logs):
+         allure.attach(logs, 'Result', allure.attachment_type.TEXT)
 
     def wait_presense_of_element_located(self, locator_type, locator):
         wait = WebDriverWait(self.driver, 20)
